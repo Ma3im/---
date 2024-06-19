@@ -1,0 +1,258 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    color: #333; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.example-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.example-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.example-button:hover {
+    background-color: #45a049; 
+}
+
+.hidden {
+    display: none;
+}
+
+#easter-egg-button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#easter-egg-button:hover {
+    background-color: #0069d9; 
+}
+
+#easter-egg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#easter-egg-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#assignments {
+    text-align: center; 
+}
+
+#assignment-buttons {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+#assignment-buttons button {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  
+}
+
+#assignment-buttons button:hover {
+    background-color: #45a049; 
+}
+
+#quiz {
+    text-align: center; 
+}
+
+#quiz-buttons {
+    display: flex; 
+    justify-content: center; 
+    align-items: wrap; 
+}
+
+#start-quiz { 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-size: 1.2em; 
+    
+    transition: background-color 0.3s ease;
+}
+
+#start-quiz:hover {
+    background-color: #45a049; 
+}
+
+.theme-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+}
+
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6a5959; 
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 29px;
+    left: 3px;
+    bottom: 4px;
+    background-color: #ede3e3; 
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2d597c; 
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.round {
+    border-radius: 34px;
+}
+
+
+
+
+.dark-theme body {
+    background-color: #333; 
+    color: #f0f0f0; 
+}
+
+.dark-theme section {
+    background-color: #222; 
+    color: #f0f0f0; 
+}
+
+.dark-theme .example-button {
+    background-color: #009688; 
+}
+
+.dark-theme .example-button:hover {
+    background-color: #00796b; 
+}
+
+.dark-theme #easter-egg-button {
+    background-color: #198754; 
+}
+
+.dark-theme #easter-egg-button:hover {
+    background-color: #147b47; 
+}
+.dark-theme #assignment-buttons button {
+    background-color: #009688; 
+}
+.dark-theme #start-quiz {
+    background-color: #009688; 
+}
+.dark-theme .slider {
+    background-color: #666; 
+}
+
+.dark-theme .slider:before {
+    background-color: #f0f0f0; 
+}
+
+     
+
+
+
+pointer-particles {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+
+
+
+
+
+
+
+

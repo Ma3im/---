@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript для начинающих</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в мир JavaScript!</h1>
+        <label class="theme-toggle" for="theme-checkbox">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="slider round"></span>
+        </label>
+    </header>
+
+    <main>
+        <pointer-particles></pointer-particles>
+        <section id="intro">
+            <h2>Что такое JavaScript?</h2>
+            <p>JavaScript - это язык программирования, который делает веб-страницы интерактивными. С его помощью можно добавлять анимацию, обработку событий, взаимодействие с пользователем и многое другое.</p>
+            <h2>Зачем изучать JavaScript?</h2>
+            <p>JavaScript - это один из самых востребованных языков программирования. Он используется для создания веб-приложений, мобильных приложений, игр и многого другого. 
+            </p>
+            <h2>Где пригодится JavaScript?</h2>
+            <ul>
+                <li>Создание интерактивных элементов на веб-страницах</li>
+                <li>Разработка веб-приложений (например, онлайн-магазинов, социальных сетей)</li>
+                <li>Создание мобильных приложений</li>
+                <li>Разработка игр</li>
+                <li>Использование в серверных технологиях (Node.js)</li>
+            </ul>
+            <h2>Когда JavaScript не пригодится?</h2>
+            <p>JavaScript не используется для создания статических веб-страниц. Для этого лучше использовать языки разметки, такие как HTML и CSS.</p>
+        </section>
+
+        <section id="examples">
+            <h2>Примеры JavaScript в действии:</h2>
+            <div class="example-container">
+                <button class="example-button" onclick="showExample('example1')">Пример 1: Взаимодействие с пользователем</button>
+                <button class="example-button" onclick="showExample('example2')">Пример 2: Работа с массивами</button>
+                <button class="example-button" onclick="showExample('example3')">Пример 3: Изменение текста</button>
+                <button class="example-button" onclick="showExample('example4')">Пример 4: Анимация</button>
+            </div>
+            <div id="example-content" class="hidden">
+                <p>Здесь будет отображаться код и результат.</p>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2>Проверь свои знания!</h2>
+            <button id="start-quiz" onclick="startQuiz()">Начать тест</button>
+            <div id="quiz-content" class="hidden">
+                <p>Вопросы теста появятся здесь.</p>
+            </div>
+            <div id="quiz-results" class="hidden">
+                <p>Результаты теста будут отображены здесь.</p>
+            </div>
+        </section>
+
+        <section id="assignments">
+            <h2>Дополнительные задания</h2>
+            <div id="assignment-buttons">
+                <button id="zodiac-button" onclick="zodiacAssignment()">Знак зодиака</button>
+        <button id="number-button" onclick="numberAssignment()">Число больше 5</button>
+        <button id="even-button" onclick="evenNumbersAssignment()">Четные числа</button>
+        <button id="odd-button" onclick="oddNumbersAssignment()">Нечетные числа</button>
+            </div>
+        </section>
+        
+        <section id="easter-egg">
+            <button id="easter-egg-button" onclick="showEasterEgg()">Сюрприз!</button>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/custom-elements@1.3.0/custom-elements.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
