@@ -1,0 +1,113 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://www.funnyart.club/uploads/posts/2022-01/1641489687_64-www-funnyart-club-p-monotonnie-foni-64.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+  
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #8ebfe9;;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .task-block {
+    background-color: #f7e0e0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+  }
+  
+  .task-block p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  pre {
+    background-color: #8ebfe9;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px 13px;
+    border: 1px solid #060606;
+    border-radius: 115px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #8ebfe9;
+  }
+  
+  ul li:hover {
+    background-color: #7dc4d0;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 115px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  #task3-result li {
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
