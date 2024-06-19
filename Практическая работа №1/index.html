@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практическая работа №1</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Практическая работа №1</h1>
+    <div class="tasks">
+      <button class="task-button" data-task-id="1">Задание 1</button>
+      <button class="task-button" data-task-id="2">Задание 2</button>
+      <button class="task-button" data-task-id="3">Задание 3</button>
+      <button class="task-button" data-task-id="4">Задание 4</button>
+      <button class="task-button" data-task-id="5">Задание 5</button>
+      <button class="task-button" data-task-id="6">Задание 6</button>
+      <button class="task-button" data-task-id="7">Задание 7</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-message"></p>
+      <input type="text" id="modal-input" placeholder="Введите данные">
+      <button id="modal-button" onclick="modalAction()">Продолжить</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
